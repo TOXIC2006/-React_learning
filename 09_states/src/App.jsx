@@ -32,10 +32,10 @@ const App = () => {
       </div>
       <button className=' id=reset text-white bg-red-500 px-2 py-2 rounded-2xl' onClick={() => { setA(0) }}>Reset</button>
 
-      <div>
+      {/* <div>
         <h1> {user.name}, {user.age}</h1>
         <button onClick={changeuser}>change user</button>
-      </div>
+      </div> */}
     </div>
   )
 }
