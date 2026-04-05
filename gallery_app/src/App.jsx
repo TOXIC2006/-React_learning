@@ -62,7 +62,7 @@ const App = () => {
           <ArrowBigLeft size={32} />
         </button>
 
-        <h1 className="font-bold text-lg">Page {Userindex - 1}</h1>
+        <h1 className="font-bold text-lg">Page {Userindex}</h1>
 
         <button
           className='bg-amber-500 text-white px-4 py-2 text-sm active:scale-110 rounded-md disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100'
@@ -73,6 +73,12 @@ const App = () => {
         >
           <ArrowBigRight size={32} />
         </button>
+
+        <input className=' text-black px-4 py-2 text-sm active:scale-110 rounded-md disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100' type="text" placeholder='enter page number'
+          onChange={(e) => {
+            setUserindex(e.target.value);
+          }}
+        />
       </div>
     </div>
   );

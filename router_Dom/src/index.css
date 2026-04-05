@@ -1,0 +1,65 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar container */
+nav {
+  background-color: #222;
+  padding: 15px 30px;
+}
+
+/* Inner nav content */
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo / title */
+nav h1 {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+/* Links container */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+nav a:hover {
+  color: #00bcd4;
+}
+
+/* Optional: make links look like buttons */
+nav a {
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #00bcd4;
+  color: #000;
+}
+
+.h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(11, 68, 139);
+  margin: 10px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-decoration: underline;
+
+
+}
