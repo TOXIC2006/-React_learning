@@ -4,7 +4,7 @@ const about = () => {
     let home = useNavigate()
     const btnclicked = () => {
         home("/")
-
+            < q ></q >
     }
     return (
         <div>
