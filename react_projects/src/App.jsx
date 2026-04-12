@@ -13,7 +13,7 @@ import Notfound from './components/404Notfound'
 import AboutPage from './components/AboutPage'
 const App = () => {
   return (
-    <div>
+    <div className='bg-gray-900'>
 
       <BrowserRouter>
         <Navbar />

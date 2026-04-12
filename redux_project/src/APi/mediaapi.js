@@ -3,12 +3,15 @@ import axios from "axios";
 const unsplashapiKey = import.meta.env.VITE_UNSPLASH_API
 const pexelsapiKey = import.meta.env.VITE_PEXELS_API
 const gifykey = import.meta.env.VITE_GIFEY_API
+// api key  le raha  hai 
 
 export async function fetchphotoes(query, page = 1, perpage = 20) {
+    //  data ko nikal raha hai aur page ko bhi 
     const response = await axios.get('https://api.unsplash.com/search/photos', {
         params: { query, page, per_page: perpage },
         headers: {
             Authorization: `Client-ID ${unsplashapiKey}`
+            // use of api key and authotraiton
         }
     })
 

@@ -8,7 +8,7 @@ function Navbar() {
         <nav className="bg-gray-900 text-white shadow-md">
             <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
 
-                <div className="text-xl font-bold">MyApp</div>
+                <div className="text-xl font-bold">React-Projects</div>
 
 
                 <ul className="hidden md:flex space-x-6">
