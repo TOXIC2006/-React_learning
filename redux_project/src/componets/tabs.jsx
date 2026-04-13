@@ -7,15 +7,20 @@ const Tabs = () => {
     const tabList = ['photoes', 'videos', 'gifey']
     const dispatch = useDispatch();
     const activeTab = useSelector((state) => state.search.activeTab)
+
     return (
-        <div className=' flex justify-center gap-2'>
+        // Changed this container to handle the layout for all buttons
+        <div className='flex justify-center gap-6 mt-5 mb-8 w-full'>
             {tabList.map((tab, index) => (
-                <button key={index}
-                    className={` ${activeTab === tab ? 'bg-green-500 text-white' : 'bg-gray-200 text-gray-700'}  rounded-2xl px-2 py-2 text-xl mt-5`}
-
-                    onClick={() => { dispatch(setActiveTab(tab)) }}>
-
-                    {tab}</button>
+                // Removed the extra wrapping div and put the key on the button
+                <button
+                    key={index}
+                    className={`${activeTab === tab ? 'bg-green-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'} rounded-2xl px-6 py-2 text-xl font-semibold capitalize transition-colors duration-200`}
+                    onClick={() => { dispatch(setActiveTab(tab)) }}
+                >
+                    {/* Optional: Clean up the display names if you want */}
+                    {tab === 'photoes' ? 'Photos' : tab === 'gifey' ? 'Gifs' : tab}
+                </button>
             ))}
         </div>
     )
