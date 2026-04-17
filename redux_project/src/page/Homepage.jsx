@@ -10,7 +10,6 @@ const Homepage = () => {
     return (
         <div>
             <Navbar />
-            {/* <SearchBar /> */}
             <Tabs />
             <ResultGrid />
         </div>
