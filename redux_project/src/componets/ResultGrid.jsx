@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { fetchvideos, fetchphotoes, fetchgifey } from '../APi/mediaapi'
 import { setResult, setLoading, setError } from '../Redux/feature/searchslice'
-import ResultCard from './ResultCard'
+import ResultCard from './resultcard'
 import { useState } from 'react'
 const ResultGrid = () => {
     const { query, activeTab, result, loading, error } = useSelector((state) => state.search)
